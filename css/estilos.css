@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#section1 {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fondo-section1.png) no-repeat scroll center;
+    background-size: cover;
+
+}
+
+#section1 > div {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#section1 > div > div.left-desc {
+    height: 160px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation-name: izquierda-derecha;
+    animation-duration: 1.8s;
+}
+
+#section1 > div > div.left-desc h1 {
+    color: #7092BE;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+#section1 > div > div.left-desc a {
+    width: 100px;
+    padding: 4px 10px;
+    color: #7092BE;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    border: #7092BE 2px solid;
+    border-radius: 3px;
+    transition: color .3s;
+}
+
+#section1 > div > div.left-desc a:hover {
+    color: white;
+}
+
+#section1 > div > div.right-img img {
+    width: 370px;
+    border-radius: 50%;
+    border: #7092BE 5px solid;
+    animation-name: derecha-izquierda;
+    animation-duration: 1.8s;
+}
+
+@keyframes izquierda-derecha {
+    from {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes derecha-izquierda {
+    from {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+#section2 {
+    background: #000 url(../img/fondo-section2.jpg) no-repeat fixed center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+}
+
+#section2 > div {
+    width: 70%;
+    height: 50%;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#section2 > div .titulo div {
+    width: 70px;
+    height: 4px;
+    background-color: #7092BE;
+}
+
+#section2 > div .informacion {
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
+#section3 {
+    background-color: black;
+    padding: 50px 0;
+}
+
+#section3 > div {
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+}
+
+#section3 > div .titulo div {
+    width: 70px;
+    height: 4px;
+    background-color: #7092BE;
+}
+
+#section3 > div .grid-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#section3 > div .grid-container .grid-item {
+    background-color: #7092BE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+}
+
+#section3 > div .grid-container .grid-item a {
+    color: white;
+    display: inline-block;
+    margin: 5px 0;
+    padding: 2px;
+    border-radius: 2px;
+    background-color: #0f52aa66;
+    transition: color .3s;
+}
+
+#section3 > div .grid-container .grid-item a:hover {
+    color: #000;
+}
+
+#section3 > div .grid-container img {
+    width: 100%;
+}
+
+footer {
+    background-color: #2D2D2D;
+    color: white;
+}
+
+footer > div {
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer > div .titulo > div {
+    width: 70px;
+    height: 4px;
+    background-color: #7092BE;
+}
+
+
+@media (max-width: 800px) {
+    #section1 > div {
+        width: 90%;
+    }
+    #section1 > div > div.right-img img {
+        width: 280px;
+    }
+    #section2 > div {
+        width: 90%;
+    }
+    #section3 > div {
+        width: 90%;
+    }
+    footer > div {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    #section1 > div {
+        flex-direction: column;
+    }
+    #section1 > div > div.right-img img {
+        width: 250px;
+    }
+    #section3 > div .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
