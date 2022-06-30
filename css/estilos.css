@@ -254,6 +254,9 @@ footer {
         align-self: center;
         margin-top: 40px;
     }
+    #section4 > div .info #contact-left {
+        width: 100%;
+    }
 }
 
 @media (max-width: 600px) {
