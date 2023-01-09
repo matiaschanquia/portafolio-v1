@@ -95,29 +95,61 @@ a {
 #section2 {
     background: #000 url(../img/fondo-section2.jpg) no-repeat fixed center;
     background-size: cover;
-    height: 300px;
-    display: flex;
+    padding: 20px 0;
 }
 
-#section2 > div {
+.sobre-habilidades {
     width: 70%;
-    height: 50%;
-    margin: auto;
+    margin: 0 auto;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-#section2 > div .titulo div {
+.underline {
     width: 70px;
     height: 4px;
     background-color: #7092BE;
 }
 
-#section2 > div .informacion {
+.informacion {
     background-color: rgba(0, 0, 0, 0.404);
+    margin: 15px 0 20px;
 }
+
+.container-habilidades {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 15px 0 0;
+    flex-wrap: wrap;
+}
+
+.container-habilidad {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+}
+
+.container-habilidad > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1);
+    transition: all .2s ease-in-out;
+}
+
+.container-habilidad > img:hover {
+    transform: translateY(-5px);
+    -webkit-filter: none;
+    filter: none;
+}
+
+
+
 
 #section3 {
     background-color: black;
@@ -128,12 +160,6 @@ a {
     width: 70%;
     margin: 0 auto;
     color: white;
-}
-
-#section3 > div .titulo div {
-    width: 70px;
-    height: 4px;
-    background-color: #7092BE;
 }
 
 #section3 > div .grid-container {
@@ -183,12 +209,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-#section4 > div .titulo > div {
-    width: 70px;
-    height: 4px;
-    background-color: #7092BE;
 }
 
 #section4 > div .info {
@@ -280,8 +300,6 @@ footer {
     color: white;
     text-align: center;
 }
-
-
 
 @media (max-width: 800px) {
     #section1 > div {
