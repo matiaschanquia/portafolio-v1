@@ -128,7 +128,7 @@ a {
 
 .container-habilidad {
     width: 100%;
-    max-width: 150px;
+    max-width: 120px;
     height: 150px;
 }
 
@@ -148,9 +148,6 @@ a {
     filter: none;
 }
 
-
-
-
 #section3 {
     background-color: black;
     padding: 50px 0;
@@ -162,14 +159,14 @@ a {
     color: white;
 }
 
-#section3 > div .grid-container {
+.grid-container {
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-#section3 > div .grid-container .grid-item {
+.grid-item {
     background-color: #7092BE;
     display: flex;
     flex-direction: column;
@@ -179,7 +176,7 @@ a {
     text-align: center;
 }
 
-#section3 > div .grid-container .grid-item a {
+.grid-item a {
     color: white;
     display: inline-block;
     margin: 5px 0;
@@ -189,12 +186,63 @@ a {
     transition: color .3s;
 }
 
-#section3 > div .grid-container .grid-item a:hover {
+.grid-item a:hover {
+    color: #ccc;
+}
+
+.container-img-app {
+    width: 100%;
+    height: 150px;
+}
+
+.container-img-app > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-img-app-conversor > img {
+    object-fit: contain;
+}
+
+.container-habilidades-app {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.habilidad-app {
+    border-radius: 10px;
+    display: inline-block;
+    padding: 4px 6px;
+}
+
+.habilidad-react {
+    background-color: #61DBFB;
+}
+
+.habilidad-html {
+    background-color: #E54C20;
+}
+
+.habilidad-css {
+    background-color: #274DE4;
+}
+
+.habilidad-js {
+    background-color: #F0DC4E;
     color: #000;
 }
 
-#section3 > div .grid-container img {
-    width: 100%;
+.habilidad-redux {
+    background-color: #7649BD;
+}
+
+.habilidad-java {
+    background-color: #E11F20;
 }
 
 #section4 {
