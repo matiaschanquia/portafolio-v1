@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -271,7 +275,7 @@ a {
 }
 
 #section4 > div .info #contact-right {
-    width: 30%;
+    width: 20%;
     display: flex;
     justify-content: space-around;
 }
